@@ -13,7 +13,7 @@ function updateTime() {
     // console.log(minutes);
     let seconds = date.getSeconds().toString().padStart(2, '0');
     // console.log(seconds);
-    let meridiem = hours > 12 ? 'PM' : 'AM';
+    let meridiem = hours >= 12 ? 'PM' : 'AM';
     
     let formattedTime = `${hours}:${minutes}:${seconds} ${meridiem}`;
     // console.log(formattedTime);
